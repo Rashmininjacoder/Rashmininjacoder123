@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+   h1{
+   	box-shadow: cyan 4px 4px 4px 1px , greenyellow -3px -3px 7px 2px ;
+    border-radius: 20px;
+
+   }
+
+body {
+	font-family: sans-serif;
+}
+
+
+span{
+	box-shadow: greenyellow 4px 4px 4px 1px , gold -3px -3px 7px 2px ;
+    border-radius: 20px;
+    background-color: orange;
+    color: black;
+    font-size: 1.8rem;
+
+}
+
+.d-flex {
+	display: flex;
+}
+
+.btn {
+	outline: none;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+	padding: 0.5rem;
+	border-radius: 1px;
+	transition: all 0.3s ease-in-out;
+}
+select {
+	appearance: none;
+	outline: black;
+	background-color: white;
+	padding: 0.5rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 2rem;
+	margin-right: 0.3rem;
+	cursor: pointer;
+	color: #0e141b;
+	border-color: black;
+}
+
+.mb {
+	margin-bottom: 1rem;
+}
+
+/* End GLobal Styles */
+
+.main-container {
+	margin-top: 15px;
+	min-height: 60vh;
+	align-items: center;
+	justify-content: center;
+	background-color: lightseagreen;
+	border-radius: 35px;
+	margin-left:2%;
+	margin-right:2%;
+	box-shadow: greenyellow 4px 4px 4px 1px , red -3px -3px 7px 2px ;
+	
+}
+
+.clock-container {
+	padding: 2rem;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+
+	background-color: orange;
+	box-shadow: greenyellow 2px 4px 4px 2px , greenyellow -3px -3px 10px 2px ;
+	
+}
+
+.current-time {
+	font-size: 3rem;
+	color: green;
+	box-shadow: greenyellow 4px 4px 4px 1px , red -3px -3px 7px 2px ;
+	border-radius: 20px;
+}
+
+.alarm-form {
+	justify-content: space-between;
+	width: 100%;
+}
+
+.submit-button {
+	border-color: blue;
+	border: 10px;
+	border-radius: 2rem;
+	font-weight: bold;
+}
+
+.set-alarm-container {
+	width: 100%;
+}
+
+.set-alarm-container .set-alarm-container-title {
+	color:white;
+	font-weight: bold;
+	font-size: 1rem;
+	margin-left: 4%;
+
+}
+.set-alarm-container-title{
+	width: 75px;
+	border-radius: 30px;
+}
+
+
+.alarm {
+	justify-content: space-between;
+	border-radius: 30px;
+	padding: 0.5rem 1rem;
+	align-items: center;
+}
+.alarm .delete-alarm {
+	border-radius: 2rem;
+	background-color: rgba(230, 13, 13, 0.918);
+	font-weight: bold;
+	color: white;
+	font-size: xx-medium;
+}
+
+.time {
+	color: #0e141b;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.btn:focus,
+.btn:hover {
+	box-shadow: black 4px 4px 4px 2px ,  #fff -3px -3px 10px 2px ;
+}
+.alarm-form div :hover {
+	box-shadow: black 4px 4px 4px 2px , #fff -3px -3px 10px 2px ;
+}
+.set-alarm-container-title{
+	box-shadow: black 4px 4px 4px 2px , #fff -3px -3px 7px 2px ;
+
+}
+
+.page-title {
+	background-color: green;
+	align-items: center;
+	text-align: center;
+	color: black;
+	border-radius: 35px;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top: 2%;
+}
+#first-container{
+	background-color: black;
+	padding: 2px 0px 6px 0px;
+	border-radius: 15px;
+}
+
+/* style of devices of screen size less than 768px */
+@media only screen and (min-width: 400px) {
+	/* adding padding to container */
+	.main-container {
+		padding-block: 2rem;
+	}
+	.clock-container {
+		justify-content: center;
+		border-radius: 50px;
+		width: 350px;
+		min-height: auto;
+	}
+}
